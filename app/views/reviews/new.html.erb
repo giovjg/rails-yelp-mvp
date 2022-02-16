@@ -1,0 +1,7 @@
+<!-- app/views/reviews/new.html.erb -->
+
+<h1>Leave a Review</h1><% restaurant.name %>
+<%= simple_form_for [ @restaurant, @review ] do |f| %>
+  <%= f.input :content %>
+  <%= f.submit "Submit review", class: "btn btn-primary" %>
+<% end %>
