@@ -16,8 +16,8 @@
         <td><%= restaurant.name %></td>
         <td><%= restaurant.address %></td>
         <td><%= restaurant.category %></td>
-        <td><%= link_to 'Show', restaurant %></td>
-       /tr>
+        <td><%= link_to "See details", restaurant_path(restaurant), class: "btn btn-primary"%></td>
+       </tr>
     <% end %>
   </tbody>
 </table>
