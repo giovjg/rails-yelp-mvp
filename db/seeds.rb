@@ -14,7 +14,8 @@ puts 'creating 10 restaurants'
   Restaurant.create!(
     name: Faker::Restaurant.name,
     address: Faker::Address.street_address,
-    category: Restaurant::Category.sample,
-    rating: rand(1..5)
+    category: Restaurant::CATEGORY.sample,
+    phone_number: Faker::PhoneNumber
   )
 end
+puts "done!"
