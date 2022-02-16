@@ -1,0 +1,9 @@
+<%#
+ creates a new Restaurant (FAILED - 1)
+      assigns a newly created restaurant as @restaurant (FAILED - 2)
+      redirects to the created restaurant (FAILED - 3) %>
+<h1>New Restaurant</h1>
+
+<%= render 'form', restaurant: @restaurant %>
+
+<%= link_to 'Back', restaurants_path %>
